@@ -8,7 +8,7 @@ let result
 
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
    userChoice = e.target.id
-   userChoiceDisplay.innerHTML = userChoice
+   userChoiceDisplay.innerText = userChoice
    generateComputerChoice()
    getResult()
 }))
@@ -26,7 +26,7 @@ function generateComputerChoice(){
     if (randomNumber === 3){
         computerChoice ='paper'
     }
-    computerChoiceDisplay.innerHTML = computerChoice;
+    computerChoiceDisplay.innerText = computerChoice;
 }
 
 function getResult(){
@@ -52,6 +52,6 @@ function getResult(){
         result = 'You lose, scissors beats paper'
     }
     
-    resultDisplay.innerHTML = result
+    resultDisplay.innerText = result
    
     }
